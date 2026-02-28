@@ -9,7 +9,6 @@
 //     <App />
 //   </Provider>
 // );
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
@@ -19,12 +18,10 @@ import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename="/glow.com/">
       <App />
     </BrowserRouter>
   </Provider>
 );
-
-
 
 
